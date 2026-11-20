@@ -7,7 +7,7 @@ It's live and explorable on my site: **[aayush-thakkar.vercel.app/projects/chess
 | Question | Answer |
 |---|---|
 | Do I play worse after a loss? | **No.** After a loss I score within noise of after a win. |
-| So what does a loss change? | **Whether I keep playing.** I end the session 23% of the time after a loss, 15% after a win. |
+| So what does a loss change? | **Whether I keep playing.** I end the session 23% of the time after a loss, 15% after a win. That's on purpose. |
 | Do I fade deep into a session? | **No pattern**, from game 1 to game 21+. |
 | When do I play best? | **Late at night.** 5–9 PM is my weakest window; 3–6 AM my strongest. |
 | Who wins the time scramble? | **Me.** In bullet I win 12.6 more games per 100 on time than I lose. |
@@ -33,7 +33,7 @@ Streaks don't change it either. Two losses in a row is the closest thing to tilt
 
 I end the session after **22.6%** of losses (95% interval 21.2–24.1%) but only **14.9%** of wins (13.8–15.9%). When I do keep going, the next game starts 5 to 6 seconds later either way.
 
-This might be why there's no tilt in finding 1. If I tend to stop on the nights a loss bothers me, the games I'd have tilted in never get played. The data can't prove that, but it's the most likely explanation, and it means the habit is doing its job.
+That's deliberate: stopping after a loss that gets to me is how I avoid tilt. Finding 1 says the habit works. The games I would have tilted in mostly never get played.
 
 ### 3. Fatigue: no fade, even 20 games in
 
@@ -47,7 +47,7 @@ A session is a run of games with no break longer than 30 minutes. Half my sessio
 
 My weakest window is 5–9 PM (−1.4, interval −2.8 to −0.1). Compared with that, I score 3.4 points per 100 games better from 9 PM to midnight and **7.6 better from 3 to 6 AM** (interval 3.8 to 11.4, 418 games). That's worth about 50 rating points.
 
-The catch is that I'm not the only thing that changes at 4 AM. The players online then are a different pool: night owls, and people starting their morning in Europe or Asia. They may be tired, or their ratings may fit them less well. This shows *when* I score best, not that I play better tired.
+That's about who I play more than how I play. The players online at that hour are a different pool: night owls, and people starting their morning in Europe or Asia, whom I tend to do well against. This shows *when* I score best, not that I play better tired.
 
 ### 5. The clock is on my side
 
@@ -133,9 +133,9 @@ pytest
 
 **What it showed me about analysis.** The first answers were wrong twice. The Elo formula looked like a fine baseline until the calibration chart showed it overrates big gaps, and the gap shifts after wins and losses, which would have skewed the tilt result. Then my best openings turned out to be the first-move advantage in disguise. Both times, the mistake was hiding in the baseline, not in the effect I was looking at. Checking what you compare against is most of the work.
 
-**What it showed me about me.** I don't tilt, and the likely reason is that I quit after losses more often than after wins. My best hours are late at night. And in bullet the clock is a weapon for me: I win 12.6 more games per 100 on time than I lose.
+**What it showed me about me.** I don't tilt, because I stop after losses that get to me, and now there are numbers that say the habit works. My best hours are late at night, thanks to who's online then. And in bullet the clock is a weapon for me: I win 12.6 more games per 100 on time than I lose.
 
-**What I'd do next.** Run an engine over a sample of games to measure move quality, not just results, which would separate my form from my opponents' at 4 AM. And track the habit going forward: if stopping after a loss is what protects me, it should hold up in next year's games.
+**What I'd do next.** Run an engine over a sample of games to measure move quality, not just results, which would separate my form from my opponents' at 4 AM.
 
 ## Skills
 
